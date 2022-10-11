@@ -1,0 +1,30 @@
+body{
+    font-family:sans-serif;
+    margin : 0 50px;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+#posts {
+    width: 400px;
+}
+
+#posts div{
+display: flex;
+align-content: center;
+justify-content:space-between ; /*this puts space between the posts and the icon*/
+}
+
+ 
+.options{
+    display: flex;
+    gap: 25px;  /* this places a space between the icons so they are clustered togeteher*/
+}
+
+i{
+   cursor: pointer; /*this gives a pointer icon when you hover over the icons with the mouse*/
+}
+

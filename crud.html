@@ -8,37 +8,56 @@
     <title>Crud Basics</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dfc6cd6c11.js" crossorigin="anonymous"></script>
 </head>
-<h1>Social App</h1>
+
 
 <body>
-    <div class="container"></div>
-    <div class="left">
-        <form id="form">
-            <!---We put the id so we can manipulate the form element in javascript-->
-            <label for="">write you post here</label>
-            <!--this is to label the form-->
-            <br><br>
-            <textarea name="" id="input" cols="30" rows="10"></textarea>
-            <br><br>
-            <!---this is to seperate each line on website so everything is aligned-->
-            <button type="submit">Post</button>
-            <!--this is the button under the text area box to submit info-->
-        </form>
+    <h1>Social Media App</h1>
+    <div class="container">
+        <div class="left">
+            <form id="form">
+                <!---We put the id so we can manipulate the form element in javascript-->
+                <label for="">write you post here</label>
+                <!--this is to label the form-->
+                <br><br>
+                <textarea name="" id="input" cols="30" rows="10"></textarea>
+                <br><br>
+                div.
+                <!---this is to seperate each line on website so everything is aligned-->
+                <button type="submit">Post</button>
+                <!--this is the button under the text area box for users to submit info inside the form-->
+            </form>
+
+        </div>
+        <div class="right">
+            <h3>Your Posts here</h3>
+            <div id="posts">
+                <!-- this div is created to add all the posts content-->
+                <div>
+                    <p>Post 1</p>
+                    <span class="options">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+                <div>
+                    <p>Post 2</p>
+                    <span class="options">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+             
+            </div>
+        </div>
     </div>
-    <div class="right"></div>
-    <h3>Your Posts here</h3>
-    <div id="posts">
-        <!-- this div is created to add all the posts content-->
-        <div>Post 1 </div>
-        <div>Post 2</div>
 
-    </div>
+    
 </body>
+ 
+<script src="crud.js"></script>
 
 
-
-
-</body>
 
 </html>
