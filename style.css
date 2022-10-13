@@ -1,6 +1,6 @@
-body{
-    font-family:sans-serif;
-    margin : 0 50px;
+body {
+    font-family: sans-serif;
+    margin: 0 50px;
 }
 
 .container {
@@ -12,19 +12,25 @@ body{
     width: 400px;
 }
 
-#posts div{
-display: flex;
-align-content: center;
-justify-content:space-between ; /*this puts space between the posts and the icon*/
-}
-
- 
-.options{
+#posts div {
     display: flex;
-    gap: 25px;  /* this places a space between the icons so they are clustered togeteher*/
+    align-content: center;
+    justify-content: space-between;
+    /*this puts space between the posts and the icon*/
 }
 
-i{
-   cursor: pointer; /*this gives a pointer icon when you hover over the icons with the mouse*/
+
+.options {
+    display: flex;
+    gap: 25px;
+    /* this places a space between the icons so they are clustered togeteher*/
 }
 
+i {
+    cursor: pointer;
+    /*this gives a pointer icon when you hover over the icons with the mouse*/
+}
+
+#msg {
+    color: blue;
+}
