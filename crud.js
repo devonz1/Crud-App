@@ -25,12 +25,24 @@ let data = {};/* all of the data input into the form will be stored into
 this empty object*/
 
 let acceptData = () => {
-    data["name"] = input.value; /*this function will take all the user input and push it into the data 
-    0bject then the "name" key will hold all values that are input*/
+    data["text"] = input.value; /*this function will take all the user input and push it into the data 
+    0bject then the "text" key will hold all values that are input*/
     console.log(data);
+    createPost();
 
 };
 
 let createPost = () => {
-    posts.innerHTML = data.text
+    posts.innerHTML +=
+        `
+    <div>
+        <p>${data.text}</p>
+       <span class="options">
+     <i class="fa-solid fa-pen-to-square"></i>
+    <i class="fa-solid fa-trash-can"></i>
+        </span>
+        </div>
+    `;
+
+    ;
 };
