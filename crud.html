@@ -18,14 +18,15 @@
         <div class="left">
             <form id="form">
                 <!---We put the id so we can manipulate the form element in javascript-->
-                <label id="color">Write Your Post Here</label>
+                <label id="color">Add Your Post Below</label>
                 <!--this is to label the form-->
                 <br><br>
-                <textarea name="" id="input" cols="30" rows="10"></textarea>
+                 <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="input" rows="8" cols="50"></textarea>
                 <br><br>
                 <div id="msg"></div>
                 <!---this is to seperate each line on website so everything is aligned-->
-                <button type="submit" class="btn btn-primary">Post</button>
+                <button type="submit" class="btn btn-primary btn-lg">Post</button>
                 <!--this is the button under the text area box for users to submit info inside the form-->
             </form>
 
@@ -37,15 +38,15 @@
                 <div>
                     <p>Post 1</p>
                     <span class="options">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                        <i class="fa-solid fa-trash-can"></i>
+                        <i onClick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
+                        <i onClick="deletePost(this)"  class="fa-solid fa-trash-can"></i>
                     </span>
                 </div>
                 <div>
                     <p>Post 2</p>
                     <span class="options">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                        <i class="fa-solid fa-trash-can"></i>
+                        <i onClick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
+                        <i onClick="deletePost(this)" class="fa-solid fa-trash-can"></i>
                     </span>
                 </div>
 

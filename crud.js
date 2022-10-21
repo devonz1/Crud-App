@@ -28,21 +28,38 @@ let acceptData = () => {
     data["text"] = input.value; /*this function will take all the user input and push it into the data 
     0bject then the "text" key will hold all values that are input*/
     console.log(data);
-    createPost();
+    createPost(); /*this createPost function will upload everything the user iputs onto
+    the screen*/
 
 };
 
 let createPost = () => {
     posts.innerHTML +=
+
         `
     <div>
-        <p>${data.text}</p>
-       <span class="options">
-     <i class="fa-solid fa-pen-to-square"></i>
-    <i class="fa-solid fa-trash-can"></i>
-        </span>
-        </div>
+                    <p>${data.text}</p>
+                    <span class="options">
+                        <i onClick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
+                        <i onClick="deletePost(this)" class="fa-solid fa-trash-can"></i>  ${/*this  onclick tells the deletePost function to 
+delete the entire post once the trashcan Icon is clicked*/""}
+                    </span>
+                </div>
     `;
+    input.value = ""; /*this will reset the text area everytime a user inputs 
+text inside ans submit it . it resets the form.*/
 
-    ;
+
+
+};
+
+
+
+let deletePost = (s) => {
+    s.parentElement.parentElement.remove();
+};
+
+let editPost = (s) => {
+    input.value = s.parentElement.previousElementSibling.innerHTML;
+    s.parentElement.parentElement.remove();
 };
